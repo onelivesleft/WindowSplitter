@@ -1,0 +1,36 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'watch' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.2
+4 verbose run-script [ 'prewatch', 'watch', 'postwatch' ]
+5 info lifecycle windowsplitter@1.0.0~prewatch: windowsplitter@1.0.0
+6 silly lifecycle windowsplitter@1.0.0~prewatch: no script for prewatch, continuing
+7 info lifecycle windowsplitter@1.0.0~watch: windowsplitter@1.0.0
+8 verbose lifecycle windowsplitter@1.0.0~watch: unsafe-perm in lifecycle true
+9 verbose lifecycle windowsplitter@1.0.0~watch: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;c:\repos\WindowSplitter\node_modules\.bin;C:\Program Files\ImageMagick-7.0.7-Q16;C:\ProgramData\Oracle\Java\javapath;C:\PROGRA~1\MAILEN~1\BIN;C:\Program Files\Mail Enable\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;L:\batch;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\temp\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\WinSCP\;C:\Program Files\cmder;c:\python27\Scripts;C:\Program Files\TextPad 7;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\mingw-w64\i686-8.1.0-win32-dwarf-rt_v6-rev0\mingw32\bin;C:\nim\bin;C:\Users\iainking.CDI\AppData\Roaming\npm;C:\Users\iainking.CDI\AppData\Local\atom\app-1.19.0\resources\app\apm\bin;C:\Users\iainking.CDI\AppData\Local\atom\;C:\Program Files\Microsoft VS Code\bin;C:\nim\bin;C:\Users\iainking.CDI\.nimble\bin;C:\Users\iainking.CDI\.nimble\bin
+10 verbose lifecycle windowsplitter@1.0.0~watch: CWD: c:\repos\WindowSplitter
+11 silly lifecycle windowsplitter@1.0.0~watch: Args: [ '/d /s /c', 'tsc -watch -p ./' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:1020:11)
+12 verbose stack     at process.kill (internal/process.js:190:13)
+12 verbose stack     at process.listener (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:91:20)
+12 verbose stack     at process.emit (events.js:185:7)
+12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (internal/process.js:217:44)
+13 verbose cwd c:\repos\WindowSplitter
+14 error Windows_NT 6.1.7601
+15 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "watch"
+16 error node v6.11.2
+17 error npm  v3.10.10
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]

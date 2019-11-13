@@ -1,0 +1,95 @@
+{
+    "name": "windowsplitter",
+    "displayName": "WindowSplitter",
+    "description": "WindowSplitter allows for hassle-free splitting/unsplitting of the editor window.",
+    "version": "1.0.0",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/onelivesleft/WindowSplitter"
+    },
+    "publisher": "onelivesleft",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.useSecondColumn",
+        "onCommand:extension.removeSecondColumnKeepActive",
+        "onCommand:extension.removeSecondColumnKeepInactive",
+        "onCommand:extension.removeSecondColumnKeepLeft",
+        "onCommand:extension.removeSecondColumnKeepRight",
+        "onCommand:extension.showInOtherColumn"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.useSecondColumn",
+                "title": "WindowSplitter: Use Second Column"
+            },
+            {
+                "command": "extension.removeSecondColumnKeepActive",
+                "title": "WindowSplitter: Remove Second Column (Keep Active)"
+            },
+            {
+                "command": "extension.removeSecondColumnKeepInactive",
+                "title": "WindowSplitter: Remove Second Column (Keep Inactive)"
+            },
+            {
+                "command": "extension.removeSecondColumnKeepLeft",
+                "title": "WindowSplitter: Remove Second Column (Keep Left)"
+            },
+            {
+                "command": "extension.removeSecondColumnKeepRight",
+                "title": "WindowSplitter: Remove Second Column (Keep Right)"
+            },
+            {
+                "command": "extension.showInOtherColumn",
+                "title": "WindowSplitter: Show In Other Column"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.useSecondColumn",
+                "key": "ctrl+\\",
+                "mac": "cmd+\\",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "extension.removeSecondColumnKeepActive",
+                "key": "ctrl+shift+\\",
+                "mac": "cmd+shift+\\",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "extension.showInOtherColumn",
+                "key": "alt+\\",
+                "mac": "alt+\\",
+                "when": "editorTextFocus"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^8.10.25",
+        "tslint": "^5.8.0",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.36"
+    },
+    "keywords": [
+        "Split",
+        "Window",
+        "Tab",
+        "Group",
+        "Views"
+    ]
+}
