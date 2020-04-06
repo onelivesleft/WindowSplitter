@@ -1,7 +1,11 @@
 # Change Log
 
 
-## [1.0.2] - 2020--3-31
+## [1.0.3] - 2020-04-06
+Update dependency for security vulnerability.
+
+
+## [1.0.2] - 2020-03-31
 Update dependency for security vulnerability.
 
 
